@@ -7,36 +7,90 @@ Most recent revision: 1
 <html lang="en">
     <head>
         <title>Menu</title>
+        <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+        
+    <style>
+            table, th, td {
+            border: 1px solid #0d1f2d;
+            border-collapse: collapse;
+            padding: 5px 10px;
+        }
+        table {
+            width: 90%;
+            margin: auto;
+            background: #ffcc99;
+            }
+        
+        tr {
+        height: 30px;
+        }
+        
+        th {
+            background-color: #5b7d87; 
+            color: #f2eded;
+            font-size: 20pt; 
+
+            }
+        tr:nth-child(odd) {
+        background-color: #e4c3ad; 
+        }
+        
+        label{
+            font-size: 20pt;
+            text-align: center;
+            font-weight: bold; 
+            display:block;
+            text-align: center;    
+
+        }
+        thead{
+            font-size: 15pt;
+        }
+        
+        tbody{
+            font-size: 12pt;
+        }
+        
+        
+        
+    </style>
     </head>
     
-    <body>
-        <main> 
+     
         <header>
             <center> <h1> PARADISE </h1> </center>
         </header>
         
         <hr/>
+    
+     <nav>
+         <ul> 
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Contact_Us.html">Contact Us</a></li>  
+         </ul>
+             <div style="clear:both"></div>
         
-        <center> <nav>
-            <p><a href="Home.html">Home</a></p>
-            <p><a href="Menu.html">Menu</a></p>
-            <p><a href="Contact_Us.html">Contact Us</a></p>   
-            </nav> </center>
-        
-        <hr/>
+    </nav> 
+        <main> 
         <body>
-            <center><table>
-                <tr> 
+           <table>
+                
+               <label> Food </label>
+               <thead>
+                <tr>
                     <th> Burgers and Fries </th>
                     <th> Hot Dogs and Chips </th>
                     <th> Italian Sausage and Peppers</th>
                 </tr>
+               <thead> 
+               <tbody>
                 <tr>
-                   <td align="center"> An American Classic! </td> 
-                    <td align="center"> A Summer Classic! </td>
-                    <td align="center"> An All-Time Favorite! </td> 
+                   <td > An American Classic! </td> 
+                    <td > A Summer Classic! </td>
+                    <td > An All-Time Favorite! </td> 
                     </tr> 
-                <tr align="center">
+                <tr >
                     <td> Your choice - with or without cheese Pickle, onion, tomato, and lettuce. Served with our famous thick cut fries.</td>
                     <td> Your choice - white or wheat bun
                     Relish, mustard, and ketchup. Served with our house-made chips.</td>
@@ -44,25 +98,29 @@ Most recent revision: 1
                 
                     </tr> 
                 
-                <tr align="center">
+                <tr >
                     <td> $7.95</td>
                     <td> $7.95 </td>
                     <td> $10.95 </td>
                 
                    </tr> 
                 
-                
-                <tr align = "center"> 
+               </tbody>
+               
+               <thead>
+                <tr > 
                     <th> Tenderloin Sandwhich and Chips </th>
                     <th> House Salad </th>
                     <th> Brisket Sandwhich and Fries</th>
                 </tr>
-                <tr align="center">
+               </thead>
+               <tbody>
+                <tr >
                    <td> Really Hits the Spot! </td> 
                     <td> On the Lighter Side! </td>
                     <td> A Taste of texas! </td> 
                     </tr> 
-                <tr align="center">
+                <tr >
                     <td> Plain of seasame seed bun. Pickle, onion, tomato, and lettuce. Served with our house-made chips.</td>
                     <td> Your choice - with ot without cheese. Iceberg lettuce, tomatoes, peppers. Thousand Island or Ranch Dressing. Served with a dinner roll.
                     .</td>
@@ -70,20 +128,42 @@ Most recent revision: 1
                 
                     </tr> 
                 
-                <tr align="center">
+                <tr >
                     <td> $8.95</td>
                     <td> $6.95 </td>
                     <td> $7.95 </td>
                 
                    </tr> 
+               </tbody>
+            </table>
+            &emsp;
+            <table>
+                <label> Beverages </label>
+            <thead>
+                <tr>
+                    <th> Root Beer </th>
+                    <th> Bottled Water </th>
+                    <th> Lemonade </th>
+                    <th> Iced Tea </th>
+                </tr>
+            </thead>
             
-            </table></center>
+            <tbody>  
+                <tr>
+                    <td> $3.00 </td>
+                    <td> $1.25 </td>
+                    <td> $1.00 </td>
+                    <td> $1.25 </td>
+                </tr>
+                
+             </tbody>
             
-        
-            
-   
+            </table>
+                
             
         </body>
+            
+          &emsp;
             
             
             
@@ -92,10 +172,8 @@ Most recent revision: 1
          
         <footer>
           <hr/>
-            <center><p> 1855 Paradise Lane, Los Angeles, CA, 90017</p>
-            <p> 909-761-2970 </p></center>
+            <p> 1855 Paradise Lane, Los Angeles, CA, 90017</p>
+            <p> 909-761-2970 </p>
         </footer>
             
-        </main>
-    
-    </body>
+       

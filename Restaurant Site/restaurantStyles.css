@@ -1,0 +1,79 @@
+/*
+Creator: S. Gunnoe
+Date created: 10/1/2018
+Date last modified: 10/1/2018
+*/
+
+header, footer {
+    background-color: #ff9966;
+    color: #fef9ff;
+    height: 80px;
+    text-align: center;
+    padding: 30px 10px 20px 10px;
+}
+header{
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 20pt;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    width: 460px;
+    margin: 0px auto;
+
+}
+
+li{
+    width: 120px;
+    height: 40px;
+    margin: 0px 4px;
+    border: 2px;
+    border-radius: 5px; 
+    float: left;
+    margin-bottom: 30px;
+}
+a{
+    display: block;
+    width: 100px;
+    height:20px;
+    line-height: 20px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+nav a {
+            background-color: #5b7d87;
+            color: #fef9ff;
+            padding: 8px;
+            border: thin solid #0d1f2d;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            margin: 20px;
+            width: 100px;
+            float: left;
+            
+        }
+body{
+    background-color: darkgrey;
+}
+
+nav a:hover {
+    background-color: #fef9ff;
+    color:  #5b7d87; 
+    font-weight: bold
+}
+nav a:active {
+    background-color: #ff3300;
+    
+}
+nav a:link {
+  color: #ffffff;
+}
+
+nav a:visited {
+    color: #ccff99;
+}

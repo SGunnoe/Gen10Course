@@ -7,22 +7,78 @@ Most recent revision: 1
 <html lang="en">
     <head>
         <title>Shantazia's Portfolio</title>
+        <link href="styles/main.css" rel="stylesheet" type="text/css" />
+        
+    <style>
+        
+        caption {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+            }
+        table, th, td {
+            border: 1px solid #0d1f2d;
+            border-collapse: collapse;
+            padding: 5px 10px;
+        }
+        
+        table {
+            width: 90%;
+            margin: auto;
+            }
+        
+        tr {
+        height: 30px;
+        }
+        
+        th {
+            background-color: #546a7b; 
+            color: #f2eded;
+
+            }
+        tr:nth-child(odd) {
+        background-color: #e4c3ad; 
+        }
+        
+        .clear-float {
+                clear:both;
+            }
+        article img {
+                float:left;
+        }
+        
+        .right-content {
+        float:left;
+        }
+        
+        article {
+            margin-bottom: 16px;
+        }
+        
+      
+      
+        
+    </style>
     
     </head>
     
     <body>
         <main> 
-        <header>
+        <header class ="jumbotron">
         <h1> Portfolio for Shantazia Gunnoe </h1>
+        <h2 class="font-italic">Web Developer Extraordinaire</h2>
+        <h3 class="text-right mt-5">Solving Web Dev problems every day!</h3>
         </header>
         
-        <hr/>
+        
         <nav>
          <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
     
                 <p><a href="projects.html">Projects</a></p>
                 <p><a href="contact.html">Contact Me</a></p>
-                <p><a href="testimonials.html">Testimonials</a></p>    
+                <p><a href="testimonials.html">Testimonials</a></p>
+            
+                <div class="clear-float"></div>
      
         </nav>
         
@@ -31,23 +87,28 @@ Most recent revision: 1
         <article id="about-me">
         <h2> <em> About Me </em> </h2>
             <img src="images/aboutme.jpg" alt="About me photo" 
-                 style="width: 200px;"/>
+                 width= "200px" />
             <p>Sed nisi est, aliquam non gravida et, euismod id ex.<strong>Praesent molestie metus justo</strong>, non tristique nisl blandit id. Proin porta nisl eros, vitae laoreet eros vestibulum in. Integer faucibus malesuada purus quis consectetur.</p>
             <p>ivamus nec sollicitudin diam, <strong>at posuere augue</strong>. Nunc pulvinar imperdiet massa ut tincidunt. Pellentesque ac tincidunt metus, nec molestie magna.</p>
+        <div class="clear-float"></div>
         </article>
         
         <article id="past-experiences">
         <h2> <em> Past Experiences </em> </h2>
         <img src="images/past.jpeg" alt = "Past Experiences" />
+        <div class="right-content">
         <table>
             <caption>Employment History</caption>
-            
+            <thead>
             <tr>
                 <th>Years of Employment</th>
                 <th>Title</th>
                 <th>Company</th>
             </tr>
+            </thead>
             
+            
+            <tbody>
             <tr>
                 <td>2018-Present</td>
                 <td>Apprentice</td>
@@ -65,16 +126,19 @@ Most recent revision: 1
                 <td>Student</td>
                 <td>State University</td>
             </tr>
+            </tbody>
           
-            
         </table>
-    
+            </div>
+        <div class="clear-float"></div>
         </article>
         
         <article id="hobbies">
         <h2><em> Hobbies </em> </h2>
         <img src="images/hobbies.png" alt="Hobbies Image" 
               style="width: 200px;"/>
+            
+        <div class="right-content">
             
             <ul>
                 <li>Authors</li>
@@ -107,7 +171,8 @@ Most recent revision: 1
                 <li>Skiing</li>
             </ul>
     </ul>
-            
+            </div>
+        <div class="clear-float"></div>    
         </article>
             
         </section>
