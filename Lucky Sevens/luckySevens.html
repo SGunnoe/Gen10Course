@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+Name: Shantazia Gunnoe
+Date Created: October 5, 2018
+Most recent revision: 1
+-->
+<html>
+    
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<script type="text/JavaScript" src="luckySevens.js"></script>
+
+<style>
+    
+    body {
+        font-family: fantasy;
+    }
+    
+    h1, caption{
+        font-weight: bold;
+    }
+    
+    caption{
+        font-size: 13pts;
+        color: black;
+    }
+    
+    tr:nth-child(odd) {
+        background-color: aqua;
+        }
+    
+
+
+</style>
+<body>
+
+  <h1>LUCKY SEVENS</h1>
+  <form name="game" onsubmit="return luckySevens();" class="inline">
+
+      <div class="group">
+        <label for="bet">Starting Bet:</label>
+        <input type="number" class="form" id="bet" placeholder="$0.00">
+      </div>
+    
+    <button type="submit" id="submitButton" class="btn btn-default">PLAY</button>
+  </form>
+  <hr />
+    
+  <table id="results" class="table" style="display:none;">
+    
+      <thead>
+      
+          <caption colspan="2">RESULTS</caption>
+      
+     </thead>
+      
+    <tbody>
+        <tr>
+            <td>Starting Bet:</td>
+            <td>$<span id="starting"></span></td>
+        </tr>
+        
+        <tr>
+            <td>Total Rolls Before Going Broke:</td>
+            <td><span id="totalRolls"></span></td>
+        </tr>
+        
+        <tr>
+            <td>Highest Amount Won:</td>
+            <td>$<span id="max"></span></td>
+        </tr>
+        
+        <tr>
+            <td>Roll Count at Highest Amount Won:</td>
+            <td><span id="rollCount"></span></td>
+        </tr>
+   
+      </tbody>
+ 
+   </table>
+    
+</body>
+    
+    <footer>
+        <hr/>
+        <p> &copy; 2018 Shantazia Gunnoe. </p>
+     
+    </footer>
+    
+    
+    
+</html>
