@@ -6,31 +6,60 @@ Most recent revision: 1
 -->
 <html lang="en">
     <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
         <title>Home Page</title>
+        
+              
+        
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" > 
+     
+       
+        
         <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+        
+        <style>
+            
+            nav .btn {
+                    background-color: #5b7d87;
+                    color: #fef9ff; 
+           }
+        
+        </style>
+        
     </head>
      
-        <header>
+        <header class="jumbotron">
             <center> <h1> PARADISE </h1> </center>
+            
+    
         </header>
         
         <hr/>
         
          <nav>
-            <ul> 
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="Menu.html">Menu</a></li>
-            <li><a href="Contact_Us.html">Contact Us</a></li>  
+            <ul>
+                <li><a href="Home.html" ><button class="btn badge-pill"><i class="fa fa-home"></i>Home</button></a></li>
+                <li><a class="btn badge-pill"  href="Menu.html">Menu</a></li>
+                <li><a class="btn badge-pill" href="Contact_Us.html">Contact Us</a></li>  
          </ul>
              <div style="clear:both"></div>
         </nav> 
         
         
         <body>
+            <div class="container">
             <div style="text-align: center"><img src="Images/Paradise.jpg" alt="Pardise Image" width="400" height="200" /></div>
             <center>
-            <p>Restaurant Descrtiption</p>
+            <p></p>
                <p>At Paradise, our mission is simple: to connect the neighborhood to a dining experience they will never forget. We incorporate dellicious food with excellent customer service to leave you with an amazing lastin impression. </p> </center>
+                
+                 <script src="js/jquery-3.3.1.min.js"></script>
+                 <script src="js/popper.min.js"></script>
+                 <script src="js/bootstrap.min.js"></script>
+                
+            </div>
             
         </body>
             
@@ -39,7 +68,7 @@ Most recent revision: 1
         
             
          
-        <footer>
+        <footer  class="jumbotron">
           <hr/>
             
             <center><p> 1855 Paradise Lane, Los Angeles, CA, 90017</p>
