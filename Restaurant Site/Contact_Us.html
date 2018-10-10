@@ -5,6 +5,11 @@ Date Created: September 28, 2018
 Most recent revision: 1
 -->
 <html lang="en">
+    
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/a6af3d839c/UntitledProject/style.css">
+    
+
+    
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
@@ -14,10 +19,28 @@ Most recent revision: 1
         <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
     </head>
     
-        <header class="jumbotron">
+           <div class = "container">
+        <header>
+            &ensp;
             <center> <h1> PARADISE </h1> </center>
-    </header>
+             <h2><marquee behavior="scroll" direction="left">We are opening our new location on Hollywood Blvd! </marquee></h2>
+        </header>
+    </div>
             <style>
+                
+Validation{                                         
+    margin-left: 70px; 
+    font-weight: bold ; 
+    float: left; 
+    clear: left; 
+    width: 100px; 
+    text-align: left; 
+    margin-right: 10px; 
+    font-family:sans-serif,bold, Arial, Helvetica; 
+    font-size:14px; 
+} 
+  
+            
             
 
 input[type=text], input[type=email], input[type=tel]
@@ -58,14 +81,13 @@ textarea {
     
 }
             </style>
+       
         
-        
-        
-        <hr/>
-        
+        <body>
+    
        <nav>
          <ul> 
-                <li><button class="btn badge-pill" href="Home.html"><i class="fa fa-home"></i> Home</button></li>
+                <li><a class="btn badge-pill"  href="Home.html"><i class="icon-home"></i>  Home</a></li>
                 <li><a class="btn badge-pill"  href="Menu.html">Menu</a></li>
                 <li><a class="btn badge-pill" href="Contact_Us.html">Contact Us</a></li> 
          </ul>
@@ -73,12 +95,14 @@ textarea {
         </nav> 
         
      
-        <body>
+    
             <main>
-       <center><form action="sendRequest.html" method="POST"> 
+                
+       <center><form name="SubmitInfo" onsubmit = "return Validation()" method="POST" > 
+           
                 Name: <input type= "text" name="MyNameInput" /><br />
                 Email: <input type= "email" name="MyEmailInput" /><br />
-                Phone: <input type="tel" name="PhoneNumInput" /><br />
+                Phone: <input type="tel" name="PhoneNumInput"  /><br />
                 Reason for Inquiry: <select name="Inquiry">
                     <option value="Catering">Catering</option>
                     <option value="Party">Private Party</option>
@@ -86,13 +110,16 @@ textarea {
                     <option value="Oth">Other</option>
                 
                 </select> <br />
-           &ensp;
+            <div class ="container">
                 Additional Information: 
                     <textarea name="AddInformation" > </textarea><br />
+           </div>
+           
                 
                 Have you been to the restaurant: 
                     <input type="radio" name="answer" value="YES" /> Yes 
                     <input type="radio" name="answer" value="NO" checked /> No <br>
+          
                 Best days to contact you:
                     <input type="checkbox" name="days" value= "Monday"/> M
                     <input type="checkbox" name="days" value= "Tuesday"/> T
@@ -100,9 +127,12 @@ textarea {
                     <input type="checkbox" name="days" value= "Thursday"/> Th 
                     <input type="checkbox" name="days" value= "Friday"/> F <br />
            
+           
                 <input type="submit" value="Send Request"/><br />
+           
            </form> </center>
-            
+                
+                
             
             </main>
             
@@ -114,13 +144,14 @@ textarea {
         
             
          
-        <footer  class="jumbotron">
-            
-          <hr/>
-            
+       <div class = "container"> 
+        <footer>
+            &ensp;
             <p> 1855 Paradise Lane, Los Angeles, CA, 90017</p>
             <p> 909-761-2970 </p>
-            
         </footer>
+            </div>
+    
+</html>
             
       
